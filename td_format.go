@@ -1,5 +1,5 @@
 
-package td
+package main
 
 import (
 	"strings"

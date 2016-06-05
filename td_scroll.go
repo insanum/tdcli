@@ -1,5 +1,5 @@
 
-package td
+package main
 
 type CursorPosition struct {
 	row    int

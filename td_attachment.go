@@ -1,5 +1,5 @@
 
-package td
+package main
 
 type TDAttachment struct {
 	ID   int64  `json:"id"`
