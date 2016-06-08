@@ -990,6 +990,7 @@ func (tasks *TDTaskList) SearchTasks(draw bool) {
 
 	/* pre-sort by priority */
 	sort.Sort(TaskListSortByPriority(tasks.tasks))
+	tasks.TaskListSetIndexes()
 
 	tasks.sbLines = []ScrollLine{}
 	tasks.sbLastSelectIdx = 0

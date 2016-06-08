@@ -210,6 +210,7 @@ func (notes *TDNoteList) SearchNotes(draw bool) {
 	/* pre-sort by modified */
 	sort.Sort(NoteListSortByModified(notes.notes))
 	notes.sorted = NotesSortedSearch
+	notes.NoteListSetIndexes()
 
 	notes.sbLines = []ScrollLine{}
 	notes.sbLastSelectIdx = 0
